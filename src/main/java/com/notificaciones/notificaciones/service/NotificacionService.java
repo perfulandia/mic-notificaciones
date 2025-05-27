@@ -9,6 +9,9 @@ import org.springframework.stereotype.Service;
 import com.notificaciones.notificaciones.model.Notificacion;
 import com.notificaciones.notificaciones.repository.NotificacionRepository;
 
+import jakarta.transaction.Transactional;
+
+@Transactional
 @Service
 public class NotificacionService {
     @Autowired

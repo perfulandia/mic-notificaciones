@@ -1,0 +1,19 @@
+meta {
+  name: crear noti
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:9002/api/v1/notificaciones
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "id":8,
+    "idDestinatario": 69,
+    "texto": "skibidi toielt"
+  }
+}

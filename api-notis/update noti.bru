@@ -1,0 +1,19 @@
+meta {
+  name: update noti
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:9002/api/v1/notificaciones/1
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "id":1,
+    "idDestinatario": 32,
+    "texto": "teeeeeest"
+  }
+}
